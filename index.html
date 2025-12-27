@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuildWithMe Travels | Premium Travel Experiences & Custom Holidays</title>
+    <meta name="description" content="Discover stunning destinations with BuildWithMe Travels. Premium travel packages, custom itineraries, and unforgettable experiences. Book your dream vacation today.">
+    <meta name="keywords" content="travel agency, vacation packages, holiday planning, Bali, Dubai, Maldives, Goa, luxury travel">
+    <meta name="author" content="BuildWithMe Travels">
+    <meta property="og:title" content="BuildWithMe Travels | Premium Travel Experiences">
+    <meta property="og:description" content="Custom travel packages for unforgettable experiences worldwide">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="travel logo.png">
+
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading" id="loading">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- Overlay for mobile menu -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Header & Navigation -->
+    <header id="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-globe-americas"></i>
+                    </div>
+                    <span class="logo-text">BuildWithMe Travels</span>
+                </a>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#packages">Packages</a></li>
+                    <li><a href="#why-us">Why Us</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#testimonials">Reviews</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Discover Your Next Adventure</h1>
+                <p>Experience the world like never before with our expertly curated travel packages. From tropical getaways to cultural expeditions, we craft unforgettable journeys tailored just for you.</p>
+                
+                <div class="hero-buttons">
+                    <a href="#packages" class="btn btn-primary">
+                        <i class="fas fa-compass"></i> Explore Destinations
+                    </a>
+                    <a href="#contact" class="btn btn-accent">
+                        <i class="fas fa-calendar-check"></i> Book Consultation
+                    </a>
+                </div>
+                
+                <div class="search-box">
+                    <div class="search-grid">
+                        <div class="search-field">
+                            <label for="destination"><i class="fas fa-map-marker-alt"></i> Destination</label>
+                            <select id="destination">
+                                <option value="">Where do you want to go?</option>
+                                <option value="bali">Bali, Indonesia</option>
+                                <option value="dubai">Dubai, UAE</option>
+                                <option value="maldives">Maldives</option>
+                                <option value="goa">Goa, India</option>
+                                <option value="thailand">Thailand</option>
+                                <option value="europe">Europe Tour</option>
+                            </select>
+                        </div>
+                        
+                        <div class="search-field">
+                            <label for="date"><i class="fas fa-calendar-alt"></i> Travel Dates</label>
+                            <input type="date" id="date">
+                        </div>
+                        
+                        <div class="search-field">
+                            <label for="travelers"><i class="fas fa-users"></i> Travelers</label>
+                            <select id="travelers">
+                                <option value="1">1 Traveler</option>
+                                <option value="2" selected>2 Travelers</option>
+                                <option value="3">3 Travelers</option>
+                                <option value="4">4 Travelers</option>
+                                <option value="5+">Family/Group</option>
+                            </select>
+                        </div>
+                        
+                        <div class="search-field">
+                            <button class="btn btn-primary search-btn" style="margin-top: 25px;">
+                                <i class="fas fa-search"></i> Find Packages
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Packages Section -->
+    <section class="packages-section" id="packages">
+        <div class="container">
+            <h2 class="section-title">Featured Travel Packages</h2>
+            <p class="text-center" style="max-width: 700px; margin: 0 auto 3rem;">Handpicked experiences designed to create lasting memories</p>
+            
+            <div class="packages-grid">
+                <!-- Bali Package -->
+                <div class="package-card" data-delay="0">
+                    <div class="package-img" style="background-image: url('https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');">
+                        <div class="package-badge">Bestseller</div>
+                    </div>
+                    <div class="package-content">
+                        <h3>Bali Paradise Escape</h3>
+                        <div class="package-meta">
+                            <div class="package-duration">
+                                <i class="far fa-calendar"></i> 5 Days / 4 Nights
+                            </div>
+                            <div class="package-price">₹42,999</div>
+                        </div>
+                        <p>Experience the magic of Bali with luxury stays, cultural tours, and pristine beaches.</p>
+                        <ul class="package-features">
+                            <li><i class="fas fa-check"></i> 4-Star Resort Accommodation</li>
+                            <li><i class="fas fa-check"></i> Daily Breakfast & Dinner</li>
+                            <li><i class="fas fa-check"></i> Temple & Waterfall Tours</li>
+                            <li><i class="fas fa-check"></i> Airport Transfers Included</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline" style="width: 100%;">View Package Details</a>
+                    </div>
+                </div>
+                
+                <!-- Dubai Package -->
+                <div class="package-card" data-delay="0.1">
+                    <div class="package-img" style="background-image: url('https://images.unsplash.com/photo-1512453979798-5ea266f8880c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');">
+                        <div class="package-badge">Luxury</div>
+                    </div>
+                    <div class="package-content">
+                        <h3>Dubai Luxury Experience</h3>
+                        <div class="package-meta">
+                            <div class="package-duration">
+                                <i class="far fa-calendar"></i> 4 Nights
+                            </div>
+                            <div class="package-price">₹55,000</div>
+                        </div>
+                        <p>Discover Dubai's opulence with desert safaris, Burj Khalifa access, and 5-star luxury.</p>
+                        <ul class="package-features">
+                            <li><i class="fas fa-check"></i> Desert Safari with Dinner</li>
+                            <li><i class="fas fa-check"></i> Burj Khalifa 124th Floor</li>
+                            <li><i class="fas fa-check"></i> 5-Star Downtown Hotel</li>
+                            <li><i class="fas fa-check"></i> Dhow Cruise with Dinner</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline" style="width: 100%;">View Package Details</a>
+                    </div>
+                </div>
+                
+                <!-- Maldives Package -->
+                <div class="package-card" data-delay="0.2">
+                    <div class="package-img" style="background-image: url('https://images.unsplash.com/photo-1514282401047-d79a71a590e8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');">
+                        <div class="package-badge">Honeymoon</div>
+                    </div>
+                    <div class="package-content">
+                        <h3>Maldives Romantic Getaway</h3>
+                        <div class="package-meta">
+                            <div class="package-duration">
+                                <i class="far fa-calendar"></i> 6 Days / 5 Nights
+                            </div>
+                            <div class="package-price">₹75,000</div>
+                        </div>
+                        <p>Perfect honeymoon escape with overwater villas, private dinners, and turquoise waters.</p>
+                        <ul class="package-features">
+                            <li><i class="fas fa-check"></i> Overwater Villa Stay</li>
+                            <li><i class="fas fa-check"></i> Romantic Beach Dinner</li>
+                            <li><i class="fas fa-check"></i> Snorkeling & Spa Access</li>
+                            <li><i class="fas fa-check"></i> All-Inclusive Dining</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline" style="width: 100%;">View Package Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-us">
+        <div class="container">
+            <h2 class="section-title">Why Choose BuildWithMe Travels</h2>
+            <p class="text-center" style="max-width: 700px; margin: 0 auto 3rem;">We're committed to making your travel experience exceptional</p>
+            
+            <div class="features-grid">
+                <div class="feature-card" data-delay="0">
+                    <div class="feature-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Expert Curation</h3>
+                    <p>Each itinerary is carefully crafted by our travel experts with insider knowledge of destinations.</p>
+                </div>
+                
+                <div class="feature-card" data-delay="0.1">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Travel Protection</h3>
+                    <p>Comprehensive travel insurance and 24/7 support ensure your journey is safe and worry-free.</p>
+                </div>
+                
+                <div class="feature-card" data-delay="0.2">
+                    <div class="feature-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Personalized Service</h3>
+                    <p>Tailored experiences that match your preferences, budget, and travel style perfectly.</p>
+                </div>
+                
+                <div class="feature-card" data-delay="0.3">
+                    <div class="feature-icon">
+                        <i class="fas fa-percentage"></i>
+                    </div>
+                    <h3>Best Value Guarantee</h3>
+                    <p>We offer competitive pricing without compromising on quality or experiences.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section" id="gallery">
+        <div class="container">
+            <h2 class="section-title">Travel Inspiration</h2>
+            <p class="text-center" style="max-width: 700px; margin: 0 auto 3rem;">Explore breathtaking destinations from around the world</p>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item" data-delay="0">
+                    <img src="https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Bali beach with palm trees and turquoise water" class="gallery-img lazy-img">
+                    <div class="gallery-overlay">
+                        <h3>Bali, Indonesia</h3>
+                        <p>Tropical Paradise</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-delay="0.1">
+                    <img src="https://images.unsplash.com/photo-1549144511-f099e773c147?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Eiffel Tower in Paris during sunset" class="gallery-img lazy-img">
+                    <div class="gallery-overlay">
+                        <h3>Paris, France</h3>
+                        <p>City of Romance</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-delay="0.2">
+                    <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Maldives overwater bungalows in crystal clear water" class="gallery-img lazy-img">
+                    <div class="gallery-overlay">
+                        <h3>Maldives</h3>
+                        <p>Luxury Overwater Villas</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-delay="0.3">
+                    <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Dubai skyline with modern skyscrapers" class="gallery-img lazy-img">
+                    <div class="gallery-overlay">
+                        <h3>Dubai, UAE</h3>
+                        <p>Modern Metropolis</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-delay="0.4">
+                    <img src="https://images.unsplash.com/photo-1528181304800-259b08848526?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Thai islands with limestone cliffs and emerald water" class="gallery-img lazy-img">
+                    <div class="gallery-overlay">
+                        <h3>Thai Islands</h3>
+                        <p>Natural Wonders</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-delay="0.5">
+                    <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Goa beach sunset with palm trees" class="gallery-img lazy-img">
+                    <div class="gallery-overlay">
+                        <h3>Goa, India</h3>
+                        <p>Beach Getaway</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <div class="container">
+            <h2 class="section-title">Traveler Stories</h2>
+            <p class="text-center" style="max-width: 700px; margin: 0 auto 3rem;">See what our clients have to say about their experiences</p>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-delay="0">
+                    <div class="testimonial-text">
+                        "Our Bali trip was absolutely magical! Every detail was perfectly arranged. The resort was stunning, and the guided tours gave us such deep insights into Balinese culture."
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Sarah smiling" class="author-avatar">
+                        <div class="author-info">
+                            <h4>Sarah & Arjun Mehta</h4>
+                            <div class="author-role">Honeymoon Travelers</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card" data-delay="0.1">
+                    <div class="testimonial-text">
+                        "As a frequent traveler, I can confidently say BuildWithMe provides exceptional service. Their attention to detail and personalized recommendations made our Dubai trip unforgettable."
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Raj smiling" class="author-avatar">
+                        <div class="author-info">
+                            <h4>Raj Kapoor</h4>
+                            <div class="author-role">Business Executive</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card" data-delay="0.2">
+                    <div class="testimonial-text">
+                        "The Maldives package was worth every rupee! The overwater villa, romantic dinners, and snorkeling experiences created memories we'll cherish forever. Highly recommended!"
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Priya smiling" class="author-avatar">
+                        <div class="author-info">
+                            <h4>Priya & Vikram Singh</h4>
+                            <div class="author-role">Anniversary Celebration</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section" id="contact">
+        <div class="container">
+            <h2>Start Your Journey Today</h2>
+            <p>Let our travel experts create your perfect itinerary. Get personalized recommendations and exclusive offers.</p>
+            
+            <div class="cta-buttons">
+                <a href="#" class="btn btn-accent">
+                    <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                </a>
+                <a href="mailto:dreamchaser.official20@gmail.com" class="btn btn-primary">
+                    <i class="fas fa-envelope"></i> Get Custom Quote
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <div class="footer-logo-icon">
+                            <i class="fas fa-globe-americas"></i>
+                        </div>
+                        <span class="logo-text">BuildWithMe Travels</span>
+                    </div>
+                    <p>Creating unforgettable travel experiences since 2020. We specialize in custom itineraries, luxury packages, and adventure tours worldwide.</p>
+                    
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/_build_with__me?igsh=NmsxMDV0emt2dXNn" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/reshika-r-71831b375" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#packages">Travel Packages</a></li>
+                        <li><a href="#why-us">Why Choose Us</a></li>
+                        <li><a href="#gallery">Destination Gallery</a></li>
+                        <li><a href="#testimonials">Client Reviews</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Chennai, Tamil Nadu, India</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>dreamchaser.official20@gmail.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Mon-Sat: 9AM-8PM<br>Sun: 10AM-6PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 BuildWithMe Travels. All rights reserved. | Designed with <i class="fas fa-heart" style="color: var(--accent);"></i> for travelers worldwide</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
